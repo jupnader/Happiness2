@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Be Happy!</string>
+    <string name="action_settings">Settings</string>
+    <string name="firstButton">Tell me how you feel</string>
+    <string name="HowYouFeel">Tell me how you feel:</string>
+    <string name="happyString">happy</string>
+</resources>
