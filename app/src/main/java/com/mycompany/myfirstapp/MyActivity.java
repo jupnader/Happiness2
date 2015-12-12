@@ -17,6 +17,15 @@ import android.widget.Button;
 import static com.mycompany.myfirstapp.R.string.happyString;
 
 public class MyActivity extends AppCompatActivity {
+    static int score = 0;
+
+    public static int getScore() {
+        return score;
+    }
+
+    public static void setScore(int ponto) {
+        score = ponto;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
