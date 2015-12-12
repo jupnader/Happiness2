@@ -14,6 +14,8 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Button;
 
+import static com.mycompany.myfirstapp.R.string.happyString;
+
 public class MyActivity extends AppCompatActivity {
 
     @Override
@@ -23,15 +25,52 @@ public class MyActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-       ImageButton fab = (ImageButton) findViewById(R.id.happyButton);
-        fab.setOnClickListener(new View.OnClickListener() {
+        final ImageButton ang = (ImageButton) findViewById(R.id.angryButton);
+        ang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                i.putExtra("angry", ang.getContentDescription());
                 startActivity(i);
 
             }
         });
+
+        final ImageButton hap = (ImageButton) findViewById(R.id.happyButton);
+        hap.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                i.putExtra("happy", hap.getContentDescription());
+                startActivity(i);
+            }
+        });
+
+
+
+        final ImageButton sle = (ImageButton) findViewById(R.id.sleepyButton);
+        sle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                i.putExtra("sleepy", sle.getContentDescription());
+                startActivity(i);
+
+            }
+        });
+
+        final ImageButton sad = (ImageButton) findViewById(R.id.tristeButton);
+        sad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                i.putExtra("sad", sad.getContentDescription());
+                startActivity(i);
+
+            }
+        });
+
     }
 
     @Override

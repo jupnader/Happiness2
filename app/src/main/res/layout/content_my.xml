@@ -39,7 +39,8 @@
         android:layout_above="@+id/sleepyButton"
         android:layout_alignRight="@+id/textView"
         android:layout_alignEnd="@+id/textView"
-        android:clickable="true" />
+        android:clickable="true"
+        android:contentDescription="sad" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -49,7 +50,8 @@
         android:layout_marginBottom="117dp"
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView" />" />
+        android:layout_alignStart="@+id/textView"
+        android:contentDescription="sleepy" />" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -58,6 +60,7 @@
         android:src="@drawable/angry2"
         android:layout_alignBottom="@+id/sleepyButton"
         android:layout_alignLeft="@+id/tristeButton"
-        android:layout_alignStart="@+id/tristeButton" />
+        android:layout_alignStart="@+id/tristeButton"
+        android:contentDescription="angry" />
 
 </RelativeLayout>

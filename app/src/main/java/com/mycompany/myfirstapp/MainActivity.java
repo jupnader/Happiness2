@@ -6,25 +6,41 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    String str;
+    String str, str2, str3, str4, feeling;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        /*TextView textView1 = (TextView) findViewById(R.id.FeelText);
+        TextView textView1 = (TextView) findViewById(R.id.FeelText);
         TextView sensate = (TextView) findViewById(R.id.textsensation);
         Intent intent = getIntent();
-        str = intent.getStringExtra("location");
-        textView1.setText("Você está se sentindo "+str+", então: ");
+        str = intent.getStringExtra("happy");
+        str2 = intent.getStringExtra("angry");
+        str3 = intent.getStringExtra("sleepy");
+        str4 = intent.getStringExtra("sad");
 
-        if(str.equals("sad"))
-            sensate.setText("jogue na Mega!");
-        else if (str.equals("happy"))
+        if (str == null)
+            if (str2 == null)
+                if (str3 == null)
+                    feeling = str4;
+                else
+                    feeling = str3;
+            else
+                feeling = str2;
+        else
+            feeling = str;
+
+        System.out.println(feeling);
+
+        textView1.setText("Você está se sentindo "+feeling+", então: ");
+
+        if(feeling.equals("sad"))
+            sensate.setText("Jogue na Mega!");
+        else if (feeling.equals("happy"))
             sensate.setText("doe dinheiro");
         else
-            sensate.setText("sorria e ria sempre!");*/
+            sensate.setText("sorria e ria sempre!");
 
 
 
