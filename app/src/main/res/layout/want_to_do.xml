@@ -36,7 +36,9 @@
             android:src="@drawable/music2"
             android:layout_alignTop="@+id/videoButton"
             android:layout_alignRight="@+id/textView2"
-            android:layout_alignEnd="@+id/textView2" />
+            android:layout_alignEnd="@+id/textView2"
+            android:clickable="true" android:autoLink="web" android:cursorVisible="true"
+            android:text="Music" android:linksClickable="true" android:onClick="goToMusic"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -46,7 +48,9 @@
             android:layout_below="@+id/videoButton"
             android:layout_alignLeft="@+id/videoButton"
             android:layout_alignStart="@+id/videoButton"
-            android:layout_marginTop="70dp" />
+            android:layout_marginTop="70dp"
+            android:clickable="true" android:autoLink="web" android:cursorVisible="true"
+            android:text="Landscape" android:linksClickable="true" android:onClick="goToLandscape"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -55,7 +59,9 @@
             android:src="@drawable/game2"
             android:layout_alignTop="@+id/landscapeButton"
             android:layout_alignLeft="@+id/musicButton"
-            android:layout_alignStart="@+id/musicButton" />
+            android:layout_alignStart="@+id/musicButton"
+            android:clickable="true" android:autoLink="web" android:cursorVisible="true"
+            android:text="Games" android:linksClickable="true" android:onClick="goToGame"/>
 
     </RelativeLayout>
 </LinearLayout>

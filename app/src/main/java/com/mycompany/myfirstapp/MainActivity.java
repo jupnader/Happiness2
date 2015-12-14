@@ -13,7 +13,9 @@ import android.widget.Button;
 import static com.mycompany.myfirstapp.R.*;
 
 public class MainActivity extends AppCompatActivity {
-    String str, str2, str3, str4, feeling;
+    String str, str2, str3, str4;
+    static String feeling;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         textView1.setText("Você está se sentindo " + feeling + ", então: ");
 
         if (feeling.equals("sad")) {
-            sensate.setText("Don't worry, things will be fine!");
+            sensate.setText("Don't worry,\n things will be fine!");
             pontos.setText("Score = " + MyActivity.score);
             sug.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -61,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             else if (feeling.equals("happy"))
 
             {
-                sensate.setText("You've achieved HAPPINESS!\nEnjoy while you can!");
+                sensate.setText("You've achieved\n HAPPINESS!\nEnjoy while you can!");
                 MyActivity.score += 150;
                 pontos.setText("Score = " + MyActivity.score);
                 sug.setOnClickListener(new View.OnClickListener() {
@@ -77,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
             } else if (feeling.equals("sleepy"))
 
             {
-                sensate.setText("Try to exercise and listen a shaking soound!");
+                sensate.setText("Try to exercise and\n listen a shaking soound!");
                 pontos.setText("Score = " + MyActivity.score);
                 sug.setOnClickListener(new View.OnClickListener() {
                     @Override

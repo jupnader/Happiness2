@@ -14,40 +14,9 @@
         android:id="@+id/FeelText"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"/>
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="200dp"
-        android:id="@+id/avatar1"
-        android:src="@drawable/android_tutorial_title_image"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/FeelText"
-        android:layout_toLeftOf="@+id/balao"
-        android:layout_toStartOf="@+id/balao" />
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/avatar1"
-        android:id="@+id/relativeLayout">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:id="@+id/textsensation"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="48dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text=""
-            android:id="@+id/pointScore"
-            android:layout_alignParentTop="true" />
-    </RelativeLayout>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -59,13 +28,55 @@
         android:layout_alignParentStart="true" />
 
     <ImageView
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:id="@+id/avatar1"
+        android:src="@drawable/fat_cat"
+        android:layout_alignParentBottom="true"
+       />
+
+
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/balao"
-        android:src="@drawable/zuggo_balao"
-
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/pointScore"
+        android:layout_marginRight="150dp"
         android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/SuggestionButton"
-        android:layout_toEndOf="@+id/SuggestionButton" />
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/avatar1"
+        android:id="@+id/relativeLayout">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/balao"
+            android:src="@drawable/zuggo_balao"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-35dp"
+            android:layout_marginLeft="100dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/textsensation"
+            android:layout_marginTop="48dp"
+            android:layout_marginLeft="145dp"/>
+
+          </RelativeLayout>
+
+
+
+
 
 </RelativeLayout>
