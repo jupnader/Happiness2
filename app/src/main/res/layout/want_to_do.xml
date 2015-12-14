@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="What do you want to do?"
+            android:id="@+id/textView2"
+            android:layout_marginTop="49dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/videoButton"
+            android:src="@drawable/video3"
+            android:layout_marginTop="53dp"
+            android:layout_below="@+id/textView2"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:clickable="true" android:autoLink="web" android:cursorVisible="true"
+            android:text="Videos" android:linksClickable="true" android:onClick="goToVideo"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/musicButton"
+            android:src="@drawable/music2"
+            android:layout_alignTop="@+id/videoButton"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_alignEnd="@+id/textView2" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/landscapeButton"
+            android:src="@drawable/landscape2"
+            android:layout_below="@+id/videoButton"
+            android:layout_alignLeft="@+id/videoButton"
+            android:layout_alignStart="@+id/videoButton"
+            android:layout_marginTop="70dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gameButton"
+            android:src="@drawable/game2"
+            android:layout_alignTop="@+id/landscapeButton"
+            android:layout_alignLeft="@+id/musicButton"
+            android:layout_alignStart="@+id/musicButton" />
+
+    </RelativeLayout>
+</LinearLayout>

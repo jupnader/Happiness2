@@ -19,26 +19,18 @@
     <ImageView
         android:layout_width="150dp"
         android:layout_height="200dp"
-        android:layout_alignParentBottom="true"
         android:id="@+id/avatar1"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
         android:src="@drawable/android_tutorial_title_image"
-        />
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/FeelText"
+        android:layout_toLeftOf="@+id/balao"
+        android:layout_toStartOf="@+id/balao" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/avatar1">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/balao"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/zuggo_balao"
-
-            />
+        android:layout_above="@+id/avatar1"
+        android:id="@+id/relativeLayout">
 
         <TextView
             android:layout_width="wrap_content"
@@ -56,4 +48,24 @@
             android:id="@+id/pointScore"
             android:layout_alignParentTop="true" />
     </RelativeLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SuggestionButton"
+        android:src="@drawable/suggestion2"
+        android:layout_below="@+id/FeelText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/balao"
+        android:src="@drawable/zuggo_balao"
+
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/SuggestionButton"
+        android:layout_toEndOf="@+id/SuggestionButton" />
+
 </RelativeLayout>

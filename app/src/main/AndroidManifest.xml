@@ -35,6 +35,10 @@
                 <category android:name="com.google.intent.category.CARDBOARD" />
             </intent-filter>-->
         </activity>
+        <activity android:name=".ToDoActivity"
+            android:noHistory="true">
+
+        </activity>
     </application>
 
 </manifest>
