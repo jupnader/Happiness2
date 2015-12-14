@@ -54,22 +54,18 @@ public class ToDoActivity extends AppCompatActivity{
         /*if (feeling.equals("sad")) {*/
 
             goToUrl("https://www.youtube.com/watch?v=Ld1Z-MQqKi0");
-
-
-
-
     }
 
     public void goToMusic (View view) {
-        goToUrl ( "http://superuser.com/");
+        goToUrl ( "https://www.youtube.com/watch?v=1iKL9_SrHr0");
     }
 
     public void goToLandscape (View view) {
-        goToUrl ( "http://superuser.com/");
+        goToUrl ( "https://www.youtube.com/watch?v=UxIXH2LzihE");
     }
 
     public void goToGame (View view) {
-        goToUrl ( "http://superuser.com/");
+        goToUrl ( "https://play.google.com/store/apps/details?id=com.otherworld.Sisters/");
     }
 
     private void goToUrl (String url) {
